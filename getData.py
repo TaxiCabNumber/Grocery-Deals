@@ -8,7 +8,6 @@ url = "https://www.ralphs.com/p/russet-potatoes/0003338353010?"
 url = "https://www.amazon.com/365-Everyday-Value-Organic-Capellini/dp/B074H6X463/"
 
 
-
 # implement inheritance/polymorphism to distinguish b/t Weee and AZF, which both utilize requests
 # all functions inherit domain()
 # set a keyword 'weee' as an input to call polymorph on the non-HTMLSession variant
