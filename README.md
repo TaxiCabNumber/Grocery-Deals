@@ -27,4 +27,4 @@ https://github.com/nithinmurali/pygsheets
 The result is a Google spreadsheet that updates its prices column everytime the script runs, which can be maintained on a consistent basis with Task Scheduler on Windows
 
 # Key concepts practiced: 
-loops, data structures, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
+loops, data structures, recursion, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
