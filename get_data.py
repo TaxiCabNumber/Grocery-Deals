@@ -2,18 +2,21 @@ from requests_html import HTMLSession
 import requests
 from bs4 import BeautifulSoup as bp
 import constants as c
+import time
 
 # implement inheritance/polymorphism to distinguish b/t Weee and AZF, which both utilize requests
 # all functions inherit domain()
 # set a keyword 'weee' as an input to call polymorph on the non-HTMLSession variant
 
 def get_data(url):
+    if url == "n/a" or url == "":
+        return "NaN"
     tag = '' #initialize as empty string
     d = domain(url)
     #switch statement for domain of URL --> different keyword (store in constants.py)
     #ralphs
     if d == c.grocer[0]: 
-        print("ralphs") #visualize
+        print("Visiting Ralph's") #visualize
         s = HTMLSession() #for some reason cannot use requests for ralphs
         r = s.get(url)
         ralph = bp(r.text, 'html.parser')
@@ -24,7 +27,7 @@ def get_data(url):
         #print(tag) #debug
     #weee
     elif d == c.grocer[1]:
-        print("weee")
+        print("Visiting Weee!")
         w = requests.get(url, headers= c.cred)
         weee = bp(w.content, 'lxml')
         tag = weee.find("div", class_= "Header_price_price__4mkmc") # tag may change based on a strikethrough indicating discount
@@ -35,7 +38,7 @@ def get_data(url):
         #print(tag)
     #amazonfresh
     elif d == c.grocer[2]:
-        print("azf")
+        print("Visiting Amazon Fresh")
         a = requests.get(url, headers= c.cred)
         azf = bp(a.content, 'lxml')
         tag = azf.find('span', attrs={"id":'priceblock_ourprice'})
@@ -46,10 +49,11 @@ def get_data(url):
     if tag == None or tag == '':
         if c.attempt == 1:
             return "NaN" #keyword to not modify the entry in sheet df
-        # occasionally normal runs return unavailble, so double check.
+        # about 1/20 valid runs return None, so double check. 
         c.attempt = c.attempt + 1
         print(c.attempt)
-        get_data(url) # try again
+        time.sleep(1) # still does not generate a valid instance
+        get_data(url) # call fn recursively
     else:
         return tag # can be none nonetype
 
