@@ -3,7 +3,7 @@ import pygsheets
 from requests_html import HTMLSession # workaround
 import pandas as pd
 #authorization
-gc = pygsheets.authorize(service_file='/Users\joncc\Documents\Personal Projects\Grocery Deals\grocery-deals-service-key.json')
+gc = pygsheets.authorize(service_file='/Users\joncc\Documents\Personal Projects\grocery-deals-service-key.json')
 
 # Create empty dataframe
 df = pd.DataFrame()
