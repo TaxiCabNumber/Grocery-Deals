@@ -1,5 +1,5 @@
 # Grocery-Deals
-After browsing online for ingrdients to cook pasta, I wondered which grocer offered them most affordably.
+After browsing online for ingredients to cook pasta, I wondered which grocer offered them most affordably.
 Driven by curiosity, I compared the product webpages of near equivalent items and noted where I found the cheapest option.
 Keeping organized sparks joy, so I made a Google Spreadsheet to document my findings:
 https://docs.google.com/spreadsheets/d/19FUu_ghsOdYvcTWcPXHH6B38UvputOzPQotog9w1dBY/edit?usp=sharing
