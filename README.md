@@ -24,4 +24,4 @@ https://github.com/nithinmurali/pygsheets
 
 4. Divide and conquer: separate files contain scripts that interact with the Google Spreadsheet, obtain the price from a website, and store constants that faciliate the other operations
 
-The result is a spreadsheet that updates its prices column everytime the script runs, which can be maintained on a consistent basis with Task Scheduler on Windows
+The result is a Google spreadsheet that updates its prices column everytime the script runs, which can be maintained on a consistent basis with Task Scheduler on Windows
