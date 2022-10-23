@@ -10,7 +10,6 @@ With a bit of functional programming within Sheets, I automatically highlighted 
 
 As a broke college student who restocks biweekly, I quickly realized manually updating my spreadsheet would be time consuming.
 Instead of clicking links and overwriting prices, I used Python to automate the boring stuff.
-Key concepts practiced: loops, data structures, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
 
 # Here is the process:
 
@@ -26,3 +25,6 @@ https://github.com/nithinmurali/pygsheets
 4. Divide and conquer: separate files contain scripts that interact with the Google Spreadsheet, obtain the price from a website, and store constants that faciliate the other operations
 
 The result is a Google spreadsheet that updates its prices column everytime the script runs, which can be maintained on a consistent basis with Task Scheduler on Windows
+
+# Key concepts practiced: 
+loops, data structures, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
