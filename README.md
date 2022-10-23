@@ -10,6 +10,7 @@ With a bit of functional programming within Sheets, I automatically highlighted 
 
 As a broke college student who restocks biweekly, I quickly realized manually updating my spreadsheet would be time consuming.
 Instead of clicking links and overwriting prices, I used Python to automate the boring stuff.
+Key concepts practiced: loops, data structures, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
 
 Here is the process:
 
