@@ -12,7 +12,7 @@ As a broke college student who restocks biweekly, I quickly realized manually up
 Instead of clicking links and overwriting prices, I used Python to automate the boring stuff.
 Key concepts practiced: loops, data structures, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
 
-Here is the process:
+# Here is the process:
 
 1. Make a Google Cloud project and enable Google Drive and Google Sheets API
 https://pygsheets.readthedocs.io/en/staging/authorization.html
