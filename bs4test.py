@@ -7,7 +7,8 @@ import constants as c
 
 #url = "https://www.ralphs.com/p/russet-potatoes/0003338353010?"
 #url = "https://www.sayweee.com/en/product/Barilla-Spaghetti-Pasta/47727"
-url = "https://www.amazon.com/365-Everyday-Value-Organic-Capellini/dp/B074H6X463/"
+#url = "https://www.amazon.com/365-Everyday-Value-Organic-Capellini/dp/B074H6X463/"
+url = "https://www.amazon.com/Prego-Italian-Pasta-Sauce-Flavored/dp/B009P7YHU8?"
 
 #headers = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36',
 #'Accept-Language': 'en-US, en;q=0.5'}
@@ -29,7 +30,6 @@ tag = doc.find('span', attrs={"id":'priceblock_ourprice'}).get_text() #, class_=
 #print(doc.prettify())
 
 j = tag.find("$")
-print(j)
 tag = tag[j+1:] #omit $ sign
 #returns
 #tag = doc.data.get('value')  #either works
