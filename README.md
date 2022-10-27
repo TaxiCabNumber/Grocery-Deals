@@ -1,5 +1,5 @@
-# Grocery-Deals
-After browsing online for ingrdients to cook pasta, I wondered which grocer offered them most affordably.
+# Grocery Deals:
+After browsing online for ingredients to cook pasta, I wondered which grocer offered them most affordably.
 Driven by curiosity, I compared the product webpages of near equivalent items and noted where I found the cheapest option.
 Keeping organized sparks joy, so I made a Google Spreadsheet to document my findings:
 https://docs.google.com/spreadsheets/d/19FUu_ghsOdYvcTWcPXHH6B38UvputOzPQotog9w1dBY/edit?usp=sharing
@@ -11,7 +11,10 @@ With a bit of functional programming within Sheets, I automatically highlighted 
 As a broke college student who restocks biweekly, I quickly realized manually updating my spreadsheet would be time consuming.
 Instead of clicking links and overwriting prices, I used Python to automate the boring stuff.
 
-# Here is the process:
+# Video Walkthrough:
+https://www.youtube.com/watch?v=HBVTVMJ_eIw
+
+# Process:
 
 1. Make a Google Cloud project and enable Google Drive and Google Sheets API
 https://pygsheets.readthedocs.io/en/staging/authorization.html
@@ -26,5 +29,5 @@ https://github.com/nithinmurali/pygsheets
 
 The result is a Google spreadsheet that updates its prices column everytime the script runs, which can be maintained on a consistent basis with Task Scheduler on Windows. On the spreadsheet, the cheapest price is highlighted green, and the vendor is displayed in the rightmost column
 
-# Key concepts practiced: 
+# Key Concepts Practiced: 
 loops, data structures, recursion, multi-file dependencies. Looking to implement polymorphism and inheritance in get_data
