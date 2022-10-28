@@ -5,7 +5,7 @@ Keeping organized sparks joy, so I made a Google Spreadsheet to document my find
 https://docs.google.com/spreadsheets/d/19FUu_ghsOdYvcTWcPXHH6B38UvputOzPQotog9w1dBY/edit?usp=sharing
 
 I wanted a reference to see which grocer provided the most competitive price.
-For example, a bundle of green onions costs $0.20 less on Weee! compared to Amazon Fresh.
+For example, a bundle of green onions costs $0.10 less on Weee! compared to Amazon Fresh.
 With a bit of functional programming within Sheets, I automatically highlighted the cheapest vendor and returned its name in a separate column.
 
 As a broke college student who restocks biweekly, I quickly realized manually updating my spreadsheet would be time consuming.
